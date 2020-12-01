@@ -3,6 +3,7 @@
 #include<assert.h>
 #include<limits.h>
 
+//#define MAX_NUM 1000
 #define MAX_NUM 1000000000
 //#define MAX_NUM INT_MAX
 //#define MAX_NUM 100000

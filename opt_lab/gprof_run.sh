@@ -9,4 +9,4 @@ PROG=$1
 gcc -pg "$PROG".c -o $PROG
 ./$PROG
 gprof $PROG > $PROG.gprof
-cat $PROG.gprof
+#cat $PROG.gprof
