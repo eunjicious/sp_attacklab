@@ -1,8 +1,6 @@
-
-
-SRCS = main.c
+SRCS = static_main.c
 LIBSRCS = open.c close.c put.c get.c 
-TARG = mykvs
+TARG = kvs_static
 
 CC = gcc
 OPTS = -Wall -O
@@ -12,6 +10,8 @@ OBJS = $(SRCS:.c=.o)
 LOBJS = $(LIBSRCS:.c=.o)
 LARS = libkvs.a
 
+
+all: 
 
 static: $(TARG)
 
@@ -26,4 +26,3 @@ $(LARS) : $(LOBJS)
 
 clean:
 	rm -f $(OBJS) $(LOBJS) $(LARS) $(TARG)
-	

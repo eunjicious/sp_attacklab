@@ -28,7 +28,7 @@ int main()
 		exit(-1);
 	}
 
-	printf("Returned value: key = %s, value = %s\n", key, rvalue);
+	printf("get: %s, %s\n", key, rvalue);
 	
 	return 0;
 }
